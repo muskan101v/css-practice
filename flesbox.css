@@ -1,0 +1,53 @@
+.flex {
+  background-color: brown;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column;
+  flex-direction: column-reverse; */
+
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  /* flex-flow: row nowrap; is a shorthand of direct and wrap of flex */
+
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  height: 70vh;
+  /* align-items: flex-start;
+  justify-content: center;
+  align-items: center; */
+  /* align-items: center; */
+  /* align-content: flex-end; */
+}
+.flex-child {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  /* display: inline-block; */
+}
+#one {
+  /* order: 2; */
+  /* flex-shrink: 3; */
+  flex-basis: 300px;
+  align-self: flex-start;
+  /* flex-grow: 2; flex-grow is used give a ratio  */
+  /* flex-shrink: ; */
+}
+#two {
+  /* order: 3; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 7; */
+  flex-basis: 300px;
+  align-self: center;
+}
+#three {
+  /* order: 1; */
+  /* flex-grow: 1; */
+  flex-basis: 300px;
+  align-self: flex-end;
+}

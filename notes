@@ -1,0 +1,363 @@
+Topics of css
+
+A. In how many ways can we specify the CSS styles for the HTML element
+
+    1. inline
+    2. Internal
+    3. External
+
+B. Types of selector
+
+    1. Element selctor
+    2. id selector
+    3. class selector
+
+Id selctor is used , when aplly a css on particular element differnt from other element we use id selector , for unique
+
+and we cannot use multiple id
+
+priority in selector maximmun priority is of Id > class > element
+
+C. InCSS Colors can be specified using
+
+    1. predefined color name
+    2. RGB
+    3. RGBA
+    4. HEX
+    5. HSL
+    6. HSLA
+
+Basic color are Red, green ,blue
+rgb(red,green,blue)
+color value between 0 to 255
+Black :rgb(0,0,0)
+White: rgb(255,255,255)
+Red ; rgb(255,0,0)
+Green : rgb(0,255,0)
+Blue: rgb(0,0,255)
+
+RGBA
+rgba(red,green,blue,alpha) :aplha is used for opacity
+alpha parameter is a number between 0.0(fully transparent) and 1.0(not transparent at all)
+
+HEX
+#rrggbb
+rr(red),gg(green),(blue)
+value between 00 to ff
+
+HSL
+hsl(hue,saturation,lightness)
+hue is a degree on the color wheel from 0 to 360. 0 is red ,120 is green and 240 is blue.
+Saturation is percentage value,0% means a shade of gray , and 100% is full color
+Lightness is also percentage, 0% is black , 50% is neither light or dark,100% is light
+Red:hsl(0,100%,50%)
+
+HSLA
+hsla(hua,,saturation,lightness,alpha)
+
+D. Background
+
+    Background position is used set aposition of backgrond image we will give in px , %
+    is we want background ill not scroll but content will scroll then use background-attachment by default -scroll
+    Shorthard background:color url() repeat attachment poisition
+    if we want multiple image in background we cane use it like url(),url()
+    and apply position
+
+E. Border
+
+if we uapply differnet property on 4 side then use
+top Reight bottom left sequence
+if we style particular side then use
+border-top-style
+border-bottom-style
+...etc
+koi bhi kisi bhi trh se agr 4 side set krni squence use krna chahye with any property
+
+F. Height and Width
+
+height and width will be set according to the parent
+if we don't know parent then we can use
+max-width
+min-height
+min-width
+max-heigth
+if we define
+max and min widht and height and we also define width and height then it will apply according to the min and mas width and heigth and parent dimension
+
+G. Padding
+
+H. Margin
+
+    margin collpase if we provide from top 20px and bottom 50px , it does not means total gap will be 70px ,
+    total gap will be 50px , why?
+    jo dono mein bda hoga wog aayega , and this is called margin collapase
+
+    if top and bottom margin collapase kr rhe honge tbhi hoga , but left or right ke saath nhi hoga
+
+part 12: Box Model
+
+    if we want to calculate the box then we calculate
+    content (width+height) + padding(both side) + border(width) + margin
+
+    when you set the width and height properties of an element with css , you just set the width and height of the content area. to calculate the full size of an element, you must also add padding , borders and margins.
+
+    total element width = width + left padding + right padding + left border + right border + left margin + right margin
+
+    totak element height = height + top padding + botto padding + top border + right border + top margin + bottom margin
+
+part 13: Text :
+
+    text direction is left to right and defualt direction is also left to right
+    if you are working another language for example urdu then you define direction
+    direction:rtl .
+
+    if we added img in between paragradh and wewnt agin it we will apply vertical align on that img
+    vertical=algin:model
+
+    if we set line-height: 0px then it will overlap the line.
+
+    if we are munnaual apply word spacing by defualt html convert into single spacing , if we do that then use pre tag or br
+
+    we can also apply shadow on text ,
+    text-shadow : horizontal shadow , vertical shadow blur color shadow
+
+    horizontal shadow means kitni durr hogi
+    vertical shadow means kitni durr hogi
+
+    how to write vertically in box:
+    writing-mode: vertical-rl;
+
+part 14: Link:
+
+    link is in 4 state
+    1. link
+    2. :visited
+    3. :hover
+    4. :active
+
+    if we use sinlgye state we can use normally but use all 4 or 3 then sequnce is
+    link => :visted => :hover => :active
+
+part 15: font:
+
+        font-size
+        font-wieght:
+        font-style
+        font-variant: small-caps; is convert the text in uppercase but height of that charater is same
+
+        font-shorthand : style varinant wight size family
+
+        The font is set to italic and bold, the font size is set to 12 pixels, the line height is set to 30 pixels, and the font family is Georgia
+
+part:16 CSS Unit:
+
+    we use length in width , height, margin,padding, font-size
+
+    there are two type of unit in css
+
+    1. Absolute
+    2. Relative
+
+    Absolute means it will not depend
+    relateive it will depend
+
+    Absolute unit in CSS
+    CM
+    Mm
+    Inch
+    Px (1inch=96px)
+    Pt (1inch = 72px)
+    Pc (1pc=12pt)
+
+    Relative Unit inCSS
+
+    Em -em is relative to the size of its direct parent
+    Rem - rem is only relative to root html tag size
+    Vh - 1% of view port heigth
+    Vw - 1% of view port width
+    % - reative to parent
+
+    em means that for eg if parent pr 2px we want uska size duble the we apply by *2 then it check to parent 2*2=4px , 0.5*2= 1px
+
+    if we want to change font size according to screen size than use vw,vh
+
+part 17: Cursor:
+
+part 18 :Box Shadow:
+
+    box-shadow : x-aix y-axis blur-radius spread color inset/outset
+    -px represnt negative axis
+
+part 19: Opacity
+
+part 20 :filter:
+
+part 21 : imageSprite : dubara se krna hai
+
+part 22: Gradient :
+
+    liner-gradient(to direction(bttom right) , green , blue, red
+
+    background-image: linear-gradient(to bottom right, black, gray);
+
+    background-image: linear-gradient(160deg, black, gray, black);
+
+    background-image: radial-gradient(circle, green 20%, blue 30%, red 50%);)
+
+part 23 : overflow:
+
+    first yh block element pr lgta hai and height speecific hoga tb
+    wrna div accroding to the item item automatically adjust height
+
+part 24 : Resizeable :
+
+    if wna t create div ito resze then use resize
+
+    fo example : textare it have resize property if we want it will not resize then use resize-none
+
+    contnent hona jarurri ai blank nhi hona chahiye
+
+part 25: list:
+
+    list-style-image: url("image url");
+    line-height-step: ;
+    list-style-type: decimal-leading-zero;
+    border: 1px solid black;
+    list-style-position: inside;
+
+part 26: table:
+
+tr pr border in algta
+
+part 27 Function:
+
+    calc
+    clamp is used add min-width ideal max-width
+    for eg: width :clamp(200px, 100%, 800px)
+    repeat
+    var is used to use root property aas value
+    for eg :root{
+    --primary-color:teal;
+    --btn-color:red;
+    --text-color:white
+    }
+
+part 28: box-sizing: by default content-box
+
+    1.content-box
+    2.border-box
+
+    border mein contnet , border, padding ussi mein aajata hai out and margin space leti hai
+
+part 29: pseudo-classses & pseudo-element dubara cover krna hai
+
+part 30 :display and visibility
+
+    display
+        inline-block
+        inline
+        block
+        none
+
+part 31 Position:
+
+    1. static
+    2. fixed
+    3. absolute
+    4. relative
+
+    5. top
+    6. bottom
+    7. left
+    8. right
+
+    top bottom left right  tbhi kaam kregi jb position define hogi wrna nhi
+
+    relative apne purani positon  ke according set hota hai, and relative apni purani jgh pr kisko ane bhi nhi deta. by default 0 hota hai sb.
+
+    absolute agr parent position element hai means usmein position defin except static then set according to the parent, is parents are not position element then it will be set according to the body , absolute in purni jgh pr next element aata hai but absolute mein woh pni jgh chor dega , chahe woh kiske bhi relative set ho.
+
+    fixed view port ke hisab se work krta hai , absolute ki trh nhi hai but ek similatrity ki woh apni jgh chor deta hai
+
+part 32: layers and z-index
+
+    z-index tbhi kaam krni jb humne position set kr rkhi hi
+
+part 33: Float and Clear
+
+    float use move left or right some thing
+    clear is used sclear the space ki ap uske right/left/both mein nhi rh skte
+    clear dono element mein lg skte hai float hai bhi ya nhi bhi
+
+    jisko apne apko adjust krni krna hota us pr clear lgta hai
+
+part 34 2DTranform
+
+    1. rotate
+    2. move
+    3. scale
+
+    4. inline element ke saath kaam nhi krta hai
+
+    The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
+
+    transform: scale(0.8, 0.7); scal emin width or height krte hai value multiply ho jta hai hai
+
+part 34: Transition
+shorthand
+
+    transition: property, duration transition-timing-function, delay;
+
+part 35 :Responsive Web site :
+
+    1. view port meta data
+    2. media query
+
+    @media screen and (min-width:400px) and (max-width:768px){
+
+        // write css here
+
+    }
+
+    Attribute Selector :
+    a[href=""]{
+
+    }
+
+    Universal Selector
+    \*{
+
+    }
+
+    Combinator Selector
+    descendant selector (space) child at any space
+    child selector (>) direct child
+    adjacent sibling selector (+) right after sibing At same level
+    general sibling selector (~) all sibling
+
+General Rule
+
+!important will override every thing
+Inline can override everything except !important
+External will work according to specificy
+
+Specificity Rule
+
+(#) id selctor has highest value
+(\*) Universal Selector has lowest value
+
+if same rule written two or more times in external sheet then last rule will be applicable
+
+Multiple column:
+
+part-49 FlexBox:
+
+    noraml flex adjust the width if we specify in parent element if want child element take exact width we define then we use flex-wrap:wrap
+
+part50: CSS-grid
+
+flex is work in one direction at a time but
+grid will work in both direction , so then flexibilty will increses
+
+Grid works for 2dimensional aligmant
+Flexbox is good for spacing

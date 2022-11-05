@@ -1,0 +1,323 @@
+body {
+  /* background-color: brown; */
+  /* height: 1000px;
+  border: 2px solid green; */
+}
+
+#bg {
+  background: #ffff
+    url("https://image.shutterstock.com/image-photo/old-brick-black-color-wall-260nw-1605128917.jpg")
+    no-repeat fixed 50% 20%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  /* background-repeat: no-repeat;
+  background-position: 5% 10%;
+   background-repeat: repeat-y;
+  background-repeat: repeat-x; 
+  background-size: 100% 100%; height or width stretch
+  background-size: cover;
+   background-size: contain; 
+  background-attachment: fixed; */
+
+  /* height: 500px; */
+  /* width: 600px; */
+  width: 100%;
+  /* height: 50%; */
+  /* overflow: auto */
+  /* max-width: 500px; */
+  /* max-height: 300px; */
+  /* min-width: ;
+  min-height: ; */
+}
+#border {
+  /* border-style: dashed;
+  border-style: groove;
+  border-style: outset;
+  border-style: inset; */
+
+  /* border-style: solid dashed groove dotted;
+  border-width: 5px 10px 2px 7px;
+  border-color: burlywood brown green blueviolet; */
+
+  border: 2px solid green;
+  /* border-top: 2px solid goldenrod; */
+  border-top-right-radius: 20px;
+
+  /* border-radius: 8px; */
+}
+p {
+  /* color: red; */
+  color: hsl(0, 0%, 100%);
+  /* background-color: rgba(25, 99, 71, 0.5); */
+}
+
+#para3 {
+  color: rgb(121, 202, 226);
+  border: 2px solid rgb(193, 233, 111);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#para4 {
+  /* color: purple; */
+  border: 2px solid rgb(243, 242, 242);
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+h1 {
+  color: green;
+}
+.green-text {
+  color: blueviolet;
+}
+#h1 {
+  color: brown;
+}
+
+#text {
+  border: 1px solid rgb(252, 248, 248);
+  color: rgb(223, 242, 83);
+  text-align: justify;
+  width: 100%;
+  /* text-decoration: overline; */
+  text-transform: capitalize;
+  line-height: 30px;
+  /* letter-spacing: 2px; */
+  /* word-spacing: 5px; */
+  /* white-space: pre; */
+  /* white-space: nowrap; */
+  word-wrap: break-word;
+  /* writing-mode: vertical-rl; */
+}
+
+#shadow {
+  font-size: 30px;
+  text-shadow: 10px -10px 3px white;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: bisque;
+}
+a:hover {
+  color: burlywood;
+}
+a:active {
+  color: red;
+}
+
+#font {
+  /* font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  font-variant: small-caps; */
+  font: italic small-caps 500 20px;
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
+
+/* @font-face {
+  font-family: abc;
+  src: url("jo mein download ki uski link");
+  then I will use it
+} */
+
+html {
+  font-size: 14px;
+}
+#parent {
+  padding: 20px;
+  color: white;
+  border: 2px solid white;
+  /* width: 10cm; */
+  /* width: 100mm; */
+  /* width: 5in; */
+  /* width: 800px; */
+  /* height: 50vh; */
+  width: 50vw;
+  /* font-size: 3rem; */
+  font-size: 2vw;
+  box-shadow: 10px 10px 40px 3px gray inset, 10px 10px 40px 3px gray;
+}
+#child {
+  border: 2px solid white;
+  /* width: 50%; */
+  /* width: ; */
+  /* font-size: 0.5em; */
+}
+
+#ul {
+  list-style-type: square;
+  text-align: left;
+}
+#ol {
+  /* list-style-type: lower-alpha; */
+  /* list-style: upper-alpha; */
+  /* list-style-type: upper-roman; */
+  /* list-style-image: url("image url"); */
+  list-style-type: decimal-leading-zero;
+  border: 1px solid black;
+  text-align: left;
+  /* list-style-position: inside; */
+}
+
+table,
+th,
+caption,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  /* border-collapse: separate; */
+}
+table {
+  empty-cells: hide;
+  width: 100%;
+  /* table-layout: fixed; */
+  table-layout: auto;
+}
+caption {
+  caption-side: bottom;
+}
+th {
+  height: 30px;
+  /* padding: 20px; */
+  text-align: center;
+}
+td {
+  height: 30px;
+  /* padding: 20px; */
+  text-align: left;
+  vertical-align: bottom;
+}
+
+#filter {
+  /* width: 700px; */
+  height: 300px;
+  /* outline-style: ; */
+  /* background-color: rgb(69, 69, 69); */
+  /* filter: blur(50px); */
+  /* filter: brightness(47%); */
+  /* filter: contrast(50%); */
+  /* filter: drop-shadow(10px 10px 20px black); */
+  /* filter: grayscale(100%); */
+  /* background-image: linear-gradient(to bottom right, black, gray); */
+  /* background-image: linear-gradient(160deg, black, gray, black); */
+  /* background-image: radial-gradient(circle, green 20%, blue 30%, red 50%); */
+  background-color: cadetblue;
+  /* resize: horizontal; */
+  width: calc(100% - 100px);
+  /* outline-style: double;
+  outline-color: aqua;
+  outline-width: 2px; */
+  outline: #4caf50 solid 10px;
+  border: 10px solid black;
+  padding: 10px;
+  margin: 10px 10px;
+  box-sizing: border-box;
+}
+
+#parent1 {
+  border: 2px solid red;
+  padding: 20px;
+  width: 50%;
+  margin: 20px 10%;
+  /* position: relative; */
+}
+#one {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: -20px;
+  z-index: 2;
+}
+#two {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  display: inline-block;
+  /* position: absolute; */
+  /* position: fixed;
+  top: 0px;
+  left: 20px; */
+  position: relative;
+  top: 50px;
+  left: -50px;
+  z-index: 3;
+}
+#three {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  left: -100px;
+}
+
+#img1,
+#img2 {
+  width: 100px;
+  height: auto;
+  padding: 10px;
+}
+#img1 {
+  float: right;
+}
+#img2 {
+  float: left;
+}
+
+#float {
+  background-color: green;
+  list-style-type: none;
+  overflow: auto;
+}
+#float li {
+  color: white;
+  padding: 5px 10px;
+  float: left;
+}
+
+#clear {
+  border: 1px solid red;
+  overflow: auto;
+}
+#img3 {
+  float: right;
+  width: 100px;
+}
+#img4 {
+  float: right;
+  width: 100px;
+  clear: right;
+}
+
+.content {
+  width: 70%;
+  background-color: #4caf50;
+  height: 200px;
+  float: left;
+}
+.footer {
+  width: 100%;
+  background-color: #a5ee14;
+  height: 20px;
+  /* overflow: auto; */
+  clear: both;
+}
+.sidebar {
+  width: 30%;
+  background-color: #700650;
+  height: 150px;
+  float: left;
+}
